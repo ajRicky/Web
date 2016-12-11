@@ -1,0 +1,237 @@
+/* set up the format about the body */
+body {
+    background-color: gainsboro; /* set background color */
+    font-family: Verdana, Arial, sans-serif; /* set up fonts */
+    /* set up space around elements using matgin */
+    margin-left: 20%; 
+    margin-right: 20%;
+}
+
+/* set up the style of heading 1 */
+h1{
+    font: .3em; /* set up the sizze */
+    color: firebrick; /* set up the color */  
+}
+
+/* set up the style of heading 2 */
+h2 { 
+    font-size: 1.3em; /* set up the size */
+    color: coral; /* set up the color */
+}
+
+/* set up the style of heading 3 */
+h3{
+    font-size: 1.3em; /* set up the size */
+    color: blueviolet; /* set up the color */
+}
+
+/* set up the styling list */
+ul{
+    overflow: hidden; /* set up overflow type */
+    background-color: black; /* set up color */
+    list-style-type: none; /* delete list style */
+    /* set up space around elements */
+    margin: 10px;
+    padding: 0;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* set up the styling list */
+li{   
+    float: left; /* set the position */
+}
+
+/* set up the styling list */
+li a{
+    display: block; /* display an element as block */
+    color: azure; /* set color */
+    text-align: center; /* set position */
+    padding: 10px 20px; /* set up space */
+    text-decoration: none; /* no sytle on text */
+    padding-left: 20px; /* set up space */
+}
+
+/* set up the styling list */
+li a:hover:not(.active){
+    background-color: none; /* when the tag is not click show balck color */
+}
+
+/* set up the styling list */
+.active{
+    background-color: chartreuse; /* when the tag is clicked, color change to green */
+}
+
+/* set up the style of pargraph 1 */
+p1{
+    color: red; /* set up color */
+}
+
+/* set up the style of pargraph 2 */
+p2{
+    font-size: 1.2em; /* set up size */
+    color: crimson; /* set up color */
+}
+
+/* set up container style */
+#container{
+    background-color: white; /* set up color */
+    width 100%; /* set up width */
+    border: 4px solid #000; /* set up bordar */
+    /* set up space */
+    padding: 20px; 
+    margin: 0;
+    margin-top: 10px;
+    /* set up the radius of the border */
+    border-radius:25px;
+}
+
+/* set up table style */
+#table, #table1, #table2{
+    display: table; /* display as a table format*/
+    margin: auto; /* auto st space */
+    text-align: center; /* text position */
+    border: 1px solid green; /* set up border */
+    padding: inherit; /* set up space */
+    border-radius: 20px; /* set up border radius */
+    margin-bottom: 10px; /* set up space */
+}
+
+/* set up content style */
+#content{
+    height: auto; /* auto set height */
+    padding: 20px; /* set up space */
+    border: 2px solid black; /* set up border */
+    /* set up space */
+    margin-left: 20px;
+    margin-right: 20px; 
+    /* set up border radius */
+    border-radius: 25px;
+}
+
+/* set up the footer */
+#footer{
+    border: 2px solid black; /* set up border */
+    /* set up space */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 25px; /* set up border radius */
+    text-align: center; /* text position */
+    
+}
+
+/* set up photo style */
+.photo{
+    /* set up space */
+    margin-left: 40%;
+    margin-right: 40%;
+    display: block; /* block element */
+}
+
+/* set up photo style */
+.photo:hover{
+    /* add animation to the photo */
+    transform: rotate(45deg) scale(1.2, 1.2); 
+}
+
+/* set up photo style */
+.circle{
+    border-radius: 50%; /* make photo show as circle */
+}
+
+/* image for footer */
+.image{
+    /* set up width and space */
+    width: 100%;
+    padding-top: 10px;
+}
+
+/* set up the the code for mobile devices, if the screen below 400px will applied follow code */
+@media only screen and (max-width:400px){
+  
+    body { 
+        background-color: gainsboro;
+        font-family: Verdana, Arial, sans-serif;
+        margin-left: 1px;
+        margin-right: 1px;
+        display: block;
+    }
+    
+    ul{
+    overflow: hidden;
+    background-color: black;
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+    
+    li a{
+    display: block;
+    color: azure;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    padding-left: 20px;
+    }
+    
+    h1{
+        font: .3em;
+        color: firebrick;
+    }
+    
+    #container{
+        width 100%;
+        border: none;
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-top: 1px;
+        border-radius: none;
+    }
+    
+    #content{
+        height: auto;
+        padding: 0px;
+        margin-left: 3px;
+        margin-right: 3px;
+        border: none;
+        border-radius: none;
+    }
+    
+    #footer{
+        border: none;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 1px;
+        text-align: center;
+    }
+    
+    .photo{
+        margin-left: 35%;
+        margin-right: 40%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transform: none;
+    }
+    
+    .photo:hover{
+        transform: none;
+        animation: none;
+    }
+    
+    #table, #table1, #table2{
+        display: table;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+}
